@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#080d19">
+  <title>УМНИК TV</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="boot" class="boot"><div class="boot-mark">УМНИК <span>TV</span></div><p>Здравствуйте!</p><button id="skipBoot" class="glass-button">Продолжить</button></div>
+  <div id="app" class="app hidden">
+    <header class="topbar">
+      <div class="brand">УМНИК <span>TV</span></div>
+      <div class="top-meta"><span id="clock"></span><span id="connection">Проверка сети…</span></div>
+    </header>
+    <div class="shell">
+      <nav id="nav" class="nav" aria-label="Основное меню">
+        <button class="nav-item active" data-page="home">⌂ <span data-i18n="home">Главная</span></button>
+        <button class="nav-item" data-page="live">◉ <span data-i18n="live">ТВ-каналы</span></button>
+        <button class="nav-item" data-page="movies">▣ <span data-i18n="movies">Фильмы</span></button>
+        <button class="nav-item" data-page="cartoons">✦ <span data-i18n="cartoons">Мультфильмы</span></button>
+        <button class="nav-item" data-page="apps">▦ <span data-i18n="apps">Приложения</span></button>
+        <button class="nav-item" data-page="games">◇ <span data-i18n="games">Игры</span></button>
+        <button class="nav-item" data-page="favorites">♡ <span data-i18n="favorites">Избранное</span></button>
+        <button class="nav-item" data-page="history">◷ <span data-i18n="history">История</span></button>
+        <button class="nav-item" data-page="settings">⚙ <span data-i18n="settings">Настройки</span></button>
+      </nav>
+      <main id="main" class="main" tabindex="-1"></main>
+    </div>
+    <div id="toast" class="toast" role="status"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
