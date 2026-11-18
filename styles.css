@@ -44,3 +44,10 @@ p{line-height:1.5;color:var(--muted)}
 .video-wrap video{width:100%;max-height:52vh;background:#000;border-radius:15px}
 @media(max-width:850px){.nav{width:170px}.nav-item{font-size:14px;padding:11px}.main{padding:22px}.hero{padding:25px}.topbar{height:62px}.shell{height:calc(100% - 62px)}}
 @media(max-width:600px){.nav{width:62px;padding:12px 6px}.nav-item{justify-content:center;padding:12px 5px;font-size:0}.nav-item span{display:none}.top-meta{gap:10px;font-size:11px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.main{padding:16px}}
+
+.remote-pad{max-width:430px;margin:24px auto;padding:24px;border:1px solid var(--line);border-radius:28px;background:rgba(20,32,52,.8);display:flex;flex-direction:column;align-items:center;gap:12px}
+.remote-row{display:flex;align-items:center;justify-content:center;gap:12px;width:100%}
+.remote-key{min-width:76px;min-height:62px;padding:12px 18px;border:1px solid rgba(255,255,255,.2);border-radius:18px;background:linear-gradient(145deg,rgba(70,100,145,.8),rgba(23,38,62,.95));font-size:20px;font-weight:bold;color:white}
+.remote-key:focus{outline:3px solid var(--focus);outline-offset:3px}
+.remote-ok{border-radius:50%;min-width:82px;min-height:82px;background:linear-gradient(145deg,#477fc7,#294d80)}
+.remote-pad .remote-row:last-child .remote-key{font-size:15px;min-height:52px}
